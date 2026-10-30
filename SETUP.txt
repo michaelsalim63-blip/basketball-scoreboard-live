@@ -1,0 +1,23 @@
+COURTSIDE SCOREBOARD V1.1.0 SYNC — SETUP
+
+1. Open https://console.firebase.google.com and create a project.
+2. Build > Realtime Database > Create Database (choose a nearby region).
+3. Build > Authentication > Sign-in method > enable Email/Password.
+4. Authentication > Users > Add user. Copy that user's UID.
+5. Realtime Database > Rules: paste firebase-rules.json and replace REPLACE_WITH_OPERATOR_UID with your operator UID. Publish.
+6. Project settings > Your apps > Web (</>) > Register app > copy firebaseConfig values into firebase-config.js. Include databaseURL from Realtime Database.
+7. Upload index.html, app.js, sync.js, firebase-config.js, sw.js, icon.svg, manifest.webmanifest to GitHub Pages root.
+8. Samsung controller: https://YOUR-URL/?mode=control (sign in with operator email and password).
+9. Android smartboard: https://YOUR-URL/?mode=display (no sign in).
+10. Test: add 2 points on controller, confirm display updates. Test game clock, timeout, break, sound and connectivity before a real match.
+
+IMPORTANT:
+- Firebase is not configured in this ZIP; you must complete steps 1–6.
+- Never put the operator password in JavaScript. firebase-config.js contains PUBLIC web configuration, not secrets.
+- Only one operator should control a match.
+- Display is read-only; anyone with the display link can view the scoreboard.
+- Both devices must have internet. Keep controller tab visible during a match; browsers may throttle background timers.
+- Audio in Android browser can require tapping the page first; test the Smartboard buzzer.
+- Timing across different devices and networks is approximate and may drift during network loss. Not suitable as a certified official clock.
+- Controller has the buzzer; Smartboard audio is not guaranteed because Android blocks autoplay until user interaction.
+- The local cached state may be overwritten by the online match on login.

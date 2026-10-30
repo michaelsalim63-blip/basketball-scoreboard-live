@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "matches": {
+      "$matchId": {
+        "state": {
+          ".read": true,
+          ".write": "auth != null && auth.uid === 'REPLACE_WITH_OPERATOR_UID'",
+          ".validate": "newData.hasChildren(['teams','scores','gameSec','period'])"
+        }
+      }
+    }
+  }
+}
