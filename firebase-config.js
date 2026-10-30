@@ -1,11 +1,11 @@
-// Copy the Web App config from Firebase Console > Project settings > Your apps.
-// databaseURL MUST be the URL of your Realtime Database.
+// Firebase web configuration (public). Never store operator passwords here.
 window.COURTSIDE_FIREBASE_CONFIG = {
-  apiKey: "PASTE_API_KEY",
-  authDomain: "PASTE_PROJECT_ID.firebaseapp.com",
-  databaseURL: "https://PASTE_DATABASE_URL.firebasedatabase.app",
-  projectId: "PASTE_PROJECT_ID",
-  appId: "PASTE_APP_ID"
+  apiKey: "AIzaSyCl8a401OJ8PF_al1mN12-94thdTBuqaCY",
+  authDomain: "courtside-scoreboard-live.firebaseapp.com",
+  databaseURL: "https://courtside-scoreboard-live-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "courtside-scoreboard-live",
+  storageBucket: "courtside-scoreboard-live.firebasestorage.app",
+  messagingSenderId: "365853688060",
+  appId: "1:365853688060:web:e61d63afb81acffeba9779"
 };
-// Change this to your own unique match identifier if needed.
 window.COURTSIDE_MATCH_ID = "main";

@@ -4,8 +4,8 @@
       "$matchId": {
         "state": {
           ".read": true,
-          ".write": "auth != null && auth.uid === 'REPLACE_WITH_OPERATOR_UID'",
-          ".validate": "newData.hasChildren(['teams','scores','gameSec','period'])"
+          ".write": "auth != null && (auth.uid === 'sECAqcWsP6cVd8rjb8JmV1EfgPe2' || auth.uid === 'aEfDZzA2xlglUjHSbdnSOVBiHU23')",
+          ".validate": "newData.hasChildren(['teams', 'scores', 'gameSec', 'period'])"
         }
       }
     }
