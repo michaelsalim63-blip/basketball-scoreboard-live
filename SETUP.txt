@@ -18,3 +18,5 @@ The buzzer on Android Smartboard may need a user interaction to unlock audio and
 Network-based clock synchronization is approximate, not certified timing.
 Keep the controller page visible and the device awake while timing.
 This is a separate ONLINE repository; do not overwrite your existing OFFLINE scoreboard.
+
+V1.1.2: Tampilan mode display sekarang menampilkan TIMEOUT LEFT dan jumlah timeout tersisa untuk masing-masing tim.
