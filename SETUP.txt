@@ -19,4 +19,4 @@ Network-based clock synchronization is approximate, not certified timing.
 Keep the controller page visible and the device awake while timing.
 This is a separate ONLINE repository; do not overwrite your existing OFFLINE scoreboard.
 
-V1.1.2: Tampilan mode display sekarang menampilkan TIMEOUT LEFT dan jumlah timeout tersisa untuk masing-masing tim.
+V1.1.3: Tampilan mode display sekarang menampilkan TIMEOUT LEFT dan jumlah timeout tersisa untuk masing-masing tim.
